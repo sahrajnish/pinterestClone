@@ -1,1 +1,14 @@
-I developed a Pinterest clone with a full suite of features. Users can register, log in, and securely authenticate their accounts using passwords. The platform supports uploading and editing posts, managing personal profiles, and interacting with a dynamic feed of pins. Each post and user is assigned a unique ID, which is stored in the database for efficient management. The application boasts a user-friendly interface and is designed with various routes to ensure smooth and intuitive navigation, greatly enhancing the overall user experience.
+## Registration Page
+![Screenshot (2)](https://github.com/user-attachments/assets/150f6cbc-6995-467f-8a5a-6c504dc1f924)
+
+## Login Page 
+![Screenshot (1)](https://github.com/user-attachments/assets/bef786c0-3d56-49c7-b1bb-e5072f6425ba)
+
+## User Profile Page 
+![Screenshot (7)](https://github.com/user-attachments/assets/822b9221-6612-4d8a-9f97-4be33e6f0e06)
+
+## Post Creation Page
+![Screenshot (10)](https://github.com/user-attachments/assets/5e6c1926-c16f-418c-8e12-955c76c9bac4)
+
+## Feed Page
+![Screenshot (12)](https://github.com/user-attachments/assets/9a594d63-d7ce-4cb2-8e79-e92c4957eaed)
