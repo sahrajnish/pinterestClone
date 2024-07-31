@@ -7,7 +7,10 @@
 ##### - Each post and user is assigned a unique ID for efficient database management.
 ##### - User-friendly interface with intuitive navigation.
 ##### - Application designed with various routes for smooth user experience.
-  
+
+## Video Preview
+[pin.webm](https://github.com/user-attachments/assets/7bcbd69a-f2c5-4617-bea4-7f05abe911f0)
+
 ## Registration Page
 ![Screenshot (2)](https://github.com/user-attachments/assets/150f6cbc-6995-467f-8a5a-6c504dc1f924)
 
