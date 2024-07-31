@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/stylesheets/add.css">
+</head>
+
+<body>
+
+    <div class="nav">
+        <h2 class="pin">Pinterest</h2>
+        <div class="right ">
+            <a class="rt" href="/profile">Profile</a>
+            <a class="rt" href="/feed">Feed</a>
+            <a class="rt lg" href="/logout">Logout</a>
+        </div>
+    </div>
+
+    <div class="main">
+        <h1 class="c">Create a new post</h1>
+        <form action="/createpost" method="post" enctype="multipart/form-data">
+            <input class="siz" type="file" name="postimage">
+            <input class="siz" type="text" name="title" placeholder="Title">
+            <textarea class="siz des" type="text" name="description" placeholder="Description"></textarea>
+            <input class="siz sub" type="submit" value="Create post">
+        </form>
+
+
+    </div>
+
+
+
+
+
+</body>
+
+</html>

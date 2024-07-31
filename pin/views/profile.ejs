@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/stylesheets/profile.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet" />
+</head>
+
+<body>
+
+
+    <div class="profile">
+
+        <div class="nav">
+            <h2 class="pin">Pinterest</h2>
+            <div class="right ">
+                <a  class="rt" href="/profile">Profile</a>
+                <a  class="rt"href="/feed">Feed</a>
+                <a  class="rt lg"href="/logout">Logout</a>
+            </div>
+        </div>
+
+        <form  id = "uploadform" hidden action="/fileupload" method="post" enctype="multipart/form-data">
+            <input type="file" name="image">
+        </form>
+
+        <div class="prodetails ">
+            <div class="absolute">
+                <div class="image">
+                    <img class="wh" src="/images/uploads/<%= user.profileImage %>"
+                        alt="">
+                </div>
+                <span class="pencil " id="uploadicon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                        <path
+                            d="M15.7279 9.57627L14.3137 8.16206L5 17.4758V18.89H6.41421L15.7279 9.57627ZM17.1421 8.16206L18.5563 6.74785L17.1421 5.33363L15.7279 6.74785L17.1421 8.16206ZM7.24264 20.89H3V16.6473L16.435 3.21231C16.8256 2.82179 17.4587 2.82179 17.8492 3.21231L20.6777 6.04074C21.0682 6.43126 21.0682 7.06443 20.6777 7.45495L7.24264 20.89Z">
+                        </path>
+                    </svg>
+                </span>
+            </div>
+            <h1 class="name"><%= user.name %></h1>
+            <h3 class="username">@<%=user.username %></h3>
+            <a href="/edit" class="edit">Edit</a>
+           <a href="/add" class="btn1"> Add New Post</a>
+
+        </div>
+
+        <div class="cards">
+            <div class="card">
+                <div class="img">
+                    <img class="wh h" src="/images/uploads/<%= user && user.posts && user.posts[0] ? user.posts[0].image : '' %>" alt=""
+                        alt="">
+                </div>
+                <a href="/show/posts" style="color: white; text-decoration: none;">Your uploaded pins</a>
+                <h3><%= user && user.posts ? user.posts.length : 0 %> Pins</h3>
+            </div>
+
+        </div>
+    </div>
+
+    <script>
+        document.querySelector("#uploadicon").addEventListener("click",function(){
+            document.querySelector("#uploadform input").click();
+        })
+        document.querySelector("#uploadform input").addEventListener("change",function(){
+            document.querySelector("#uploadform").submit();
+
+        })
+    </script>
+</body>
+
+</html>

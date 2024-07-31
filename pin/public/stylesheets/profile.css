@@ -1,0 +1,177 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    box-sizing: border-box;
+ 
+}
+
+.profile {
+    width: 100vw;
+    background: #000000de;
+    height: 100vh;
+    color: white;
+    padding-top: 1px;
+}
+
+.image {
+   
+    width: 90px;
+    height: 90px;
+    background: rgba(255, 255, 255, 0.959);
+    border-radius: 50%;
+    padding: 3px;
+    overflow: hidden;
+    object-fit: cover;
+    
+
+
+
+}
+
+img{
+    object-fit: cover;
+    object-position: top right;
+}
+
+.wh {
+    width: 100%;
+    height: 100%;
+}
+
+.name {
+    font-size: medium;
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+.username {
+    margin: 3px;
+    font-size: small;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+.edit {
+    text-decoration: none;
+    color: white;
+    font-weight: lighter;
+    padding: 8px 20px;
+    font-size: 10px;
+    border-radius: 999px;
+    background: #1a1616c1;
+
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.prodetails {
+    margin-top: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.cards {
+
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 10px;
+    margin: 15px;
+
+
+}
+
+.card .img {
+    width: 150px;
+    height: 120px;
+    background: white;
+    perspective: 1000px;
+}
+
+.card h1 {
+    font-size: 15px;
+    margin: 5px 0;
+    font-weight: 550;
+}
+
+.card h3 {
+    font-size: 10px;
+    opacity: .9;
+}
+
+.card .img,
+img {
+    overflow: hidden;
+    object-fit: cover;
+    border-radius: 10px;
+    
+
+
+}
+
+.btn1{
+    padding: 7px 20px;
+    background: rgba(255, 0, 0, 0.704);
+    font: 15px;
+    font-weight: 400;
+    border-radius: 13px;
+    border: none;
+    color: rgba(255, 255, 255, 0.81);
+    margin-top: 10px;
+    text-decoration: none;
+
+}
+.absolute{
+    position: relative;
+}
+
+.pencil{
+    width: 27px;
+    height: 27px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+ 
+   background:rgb(255, 255, 255);
+   opacity: 0.9;
+   border-radius: 20px;
+   color: black;
+  
+   
+}
+.nav{
+
+    display: flex;
+    justify-content: space-between;
+   padding: 10px 30px;
+  color: white;
+   text-decoration: none;
+}
+
+.pin{
+    font-size: 14px;
+    font-weight: 400;
+}
+.right{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+.nav a{
+    color: white;
+    text-decoration: none;
+}
+
+.lg{
+    background: rgba(255, 0, 0, 0.779);
+    padding: 4px;
+    border-radius: 3px;
+    font-size: 15px;
+}
