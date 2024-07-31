@@ -1,3 +1,13 @@
+
+#### Users can register, log in, and securely authenticate their accounts using passwords.
+##### Platform supports:
+- Uploading and editing posts.
+- Managing personal profiles.
+- Interacting with a dynamic feed of pins.
+##### Each post and user is assigned a unique ID for efficient database management.
+##### User-friendly interface with intuitive navigation.
+##### Application designed with various routes for smooth user experience.
+  
 ## Registration Page
 ![Screenshot (2)](https://github.com/user-attachments/assets/150f6cbc-6995-467f-8a5a-6c504dc1f924)
 
